@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oceanfront Condominiums Galle — Owner Portal</title>
+<meta name="description" content="Owner documents and Council records for Oceanfront Condominiums, Galle.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#0B3A46">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B3A46'/><path d='M5 21c3-3 5.5-3 8.5 0s5.5 3 8.5 0 5.5-3 5-3' stroke='%23B0802C' stroke-width='2.4' fill='none' stroke-linecap='round'/><path d='M5 13c3-3 5.5-3 8.5 0s5.5 3 8.5 0' stroke='%23EEF3F3' stroke-width='2.4' fill='none' stroke-linecap='round'/></svg>">
+
+<style>
+:root{
+  --ink:#0E2A31;
+  --deep:#0B3A46;
+  --sea:#14616F;
+  --mist:#EEF3F3;
+  --paper:#FFFFFF;
+  --brass:#B0802C;
+  --line:#D2DEDE;
+  --muted:#4C6A70;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{animation:none !important;transition:none !important}
+}
+body{
+  margin:0;
+  background:var(--mist);
+  color:var(--ink);
+  font-family:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:2px}
+
+/* ---------- skip link ---------- */
+.skip{position:absolute;left:-9999px;top:0;background:var(--paper);color:var(--deep);
+  padding:12px 18px;font-weight:700;z-index:50}
+.skip:focus{left:16px;top:16px}
+
+/* ---------- header ---------- */
+header{background:var(--deep);color:#fff;position:relative;z-index:2}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+.brand svg{flex:none}
+.brand b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:600;
+  font-size:19px;letter-spacing:.1px;line-height:1.15}
+.brand span{display:block;font-size:13px;color:#A9C6CB;letter-spacing:.3px}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav a{color:#CFE1E4;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{color:#fff;border-bottom-color:var(--brass)}
+
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(170deg,var(--deep) 0%,var(--sea) 100%);color:#fff;
+  position:relative;padding:74px 0 96px;overflow:hidden}
+.hero h1{
+  font-family:"Fraunces",Georgia,serif;font-weight:400;
+  font-size:clamp(38px,6.4vw,66px);line-height:1.06;letter-spacing:-.5px;
+  margin:0 0 22px;max-width:15ch;
+}
+.hero p{margin:0;max-width:52ch;font-size:clamp(17px,2vw,19px);color:#D6E6E9}
+.facts{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.fact{border:1px solid rgba(255,255,255,.28);padding:9px 16px;border-radius:999px;
+  font-size:14.5px;color:#E3F0F2}
+.horizon{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:70px;display:block}
+.reveal{opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.3,1) forwards}
+.reveal.d2{animation-delay:.12s}
+.reveal.d3{animation-delay:.22s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none}}
+
+/* ---------- section ---------- */
+main{padding:0 0 10px}
+.section{padding:64px 0}
+.section-head{max-width:60ch;margin-bottom:34px}
+.section-head h2{font-family:"Fraunces",Georgia,serif;font-weight:600;
+  font-size:clamp(26px,3.4vw,34px);line-height:1.2;margin:0 0 10px}
+.section-head p{margin:0;color:var(--muted)}
+
+/* ---------- document rows ---------- */
+.docs{display:flex;flex-direction:column;gap:18px}
+.doc{
+  display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;
+  background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--brass);
+  border-radius:4px;padding:30px 32px;
+}
+.doc h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:23px;
+  line-height:1.25;margin:0 0 8px}
+.doc p{margin:0 0 16px;color:var(--muted);max-width:62ch;font-size:16.5px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:13.5px;color:var(--sea);border:1px solid var(--line);
+  padding:4px 11px;border-radius:3px;background:#F7FAFA}
+.open{
+  display:inline-flex;align-items:center;gap:10px;white-space:nowrap;
+  background:var(--deep);color:#fff;text-decoration:none;font-weight:700;font-size:15.5px;
+  padding:14px 24px;border-radius:3px;transition:background .18s ease;
+}
+.open:hover{background:var(--sea)}
+.open svg{flex:none}
+
+/* ---------- help ---------- */
+.help{background:var(--paper);border:1px solid var(--line);border-radius:4px;
+  padding:34px 32px;max-width:720px}
+.help h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:23px;margin:0 0 10px}
+.help p{margin:0 0 12px;color:var(--muted)}
+.help p:last-child{margin-bottom:0}
+
+/* ---------- footer ---------- */
+footer{background:var(--deep);color:#B9D2D7;margin-top:30px;padding:40px 0;font-size:15px}
+footer strong{display:block;color:#fff;font-family:"Fraunces",Georgia,serif;
+  font-weight:600;font-size:18px;margin-bottom:6px}
+.note{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:14px;color:#93B4BA}
+
+@media (max-width:760px){
+  .bar{flex-wrap:wrap;gap:14px}
+  nav{gap:20px}
+  .hero{padding:56px 0 78px}
+  .doc{grid-template-columns:1fr;gap:20px;padding:26px 24px}
+  .open{justify-content:center}
+  .section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#documents">Skip to documents</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <svg width="40" height="40" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#14616F"/>
+        <path d="M5 21c3-3 5.5-3 8.5 0s5.5 3 8.5 0 5-2.6 5-2.6" stroke="#B0802C" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M5 13c3-3 5.5-3 8.5 0s5.5 3 8.5 0" stroke="#EEF3F3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <b>Oceanfront Condominiums</b>
+        <span>Galle · Owner Portal</span>
+      </span>
+    </a>
+    <nav>
+      <a href="#documents">Documents</a>
+      <a href="#help">Help</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <h1 class="reveal">Owner documents, in one place.</h1>
+    <p class="reveal d2">The Constitution and By-laws, Council meeting minutes and the Owners' Handbook. Choose a collection and it opens in Google Drive, where you can read or download the files.</p>
+    <div class="facts reveal d3">
+      <span class="fact">3 document collections</span>
+      <span class="fact">Minutes from March 2023 onward</span>
+      <span class="fact">Updated September 2026</span>
+    </div>
+  </div>
+  <svg class="horizon" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,34 C240,66 420,6 720,26 C1010,45 1200,72 1440,40 L1440,70 L0,70 Z" fill="#EEF3F3"/>
+    <path d="M0,34 C240,66 420,6 720,26 C1010,45 1200,72 1440,40" fill="none" stroke="#B0802C" stroke-width="2" opacity=".55"/>
+  </svg>
+</section>
+
+<main>
+  <section class="section" id="documents">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Browse owner resources</h2>
+        <p>Each collection is a shared Google Drive folder holding the latest available documents.</p>
+      </div>
+
+      <div class="docs">
+
+        <article class="doc">
+          <div>
+            <h3>Constitution &amp; By-laws</h3>
+            <p>Current governing documents and proposed amendments for owner reference.</p>
+            <div class="tags"><span class="tag">Constitution</span><span class="tag">By-laws</span><span class="tag">Amendments</span></div>
+          </div>
+          <a class="open" href="https://drive.google.com/drive/folders/1LX2JXZKn4asyoVvnR0_qtSdcPxfPP_5K" target="_blank" rel="noopener noreferrer">
+            Open in Google Drive
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2h8v8M14 2 6.5 9.5M11 12v2H2V5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="doc">
+          <div>
+            <h3>Council Meeting Minutes</h3>
+            <p>Council records organised by term, with documents from March 2023 onward.</p>
+            <div class="tags"><span class="tag">Meeting minutes</span><span class="tag">Council decisions</span></div>
+          </div>
+          <a class="open" href="https://drive.google.com/drive/folders/1ubzzG08KfHOAfj_shNUpZUlNKOJwMhL_" target="_blank" rel="noopener noreferrer">
+            Open in Google Drive
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2h8v8M14 2 6.5 9.5M11 12v2H2V5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="doc">
+          <div>
+            <h3>Owners' Handbook</h3>
+            <p>Practical information, procedures and guidance for owners and residents.</p>
+            <div class="tags"><span class="tag">Owner guidance</span><span class="tag">Procedures</span></div>
+          </div>
+          <a class="open" href="https://drive.google.com/drive/folders/13bYC6awFYJi4uPBYyfdvG92SYqwvI1Cm" target="_blank" rel="noopener noreferrer">
+            Open in Google Drive
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2h8v8M14 2 6.5 9.5M11 12v2H2V5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="help" style="padding-top:0">
+    <div class="wrap">
+      <div class="help">
+        <h2>Having trouble opening a document?</h2>
+        <p>Google Drive permissions apply to each collection separately. If Drive shows an access request instead of the files, the folder has not yet been shared with your account.</p>
+        <p>Contact the condominium office with the name of the collection you were trying to open, and access will be arranged.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>Oceanfront Condominiums Galle</strong>
+    Owner information portal
+    <div class="note">Shared by link. Please keep owner materials confidential.</div>
+  </div>
+</footer>
+
+</body>
+</html>
